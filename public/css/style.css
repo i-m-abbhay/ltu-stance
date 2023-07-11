@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+/*** 共通 ***/
+html, body {
+    font-family: sans-serif;
+}
+
+/******************** ボタン ********************/
+/* 検索ボタン */
+.btn-search {
+    margin-top: 7px;
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-search:hover, .btn-search:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 検索条件クリアボタン */
+.btn-clear {
+  margin-top: 7px;
+  background-color: #5bc0de;
+  color: #fff;
+  border: none;
+}
+.btn-clear:hover, .btn-clear:focus {
+  background-color: #2aabd2 !important;
+  color: #fff !important;
+  border: none !important;
+}
+/* 新規作成ボタン */
+.btn-new {
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-new:hover, .btn-new:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 詳細ボタン */
+.btn-detail {
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-detail:hover, .btn-detail:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 編集ボタン */
+.btn-edit {
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-edit:hover, .btn-edit:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 登録ボタン */
+.btn-save {
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-save:hover, .btn-save:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 戻るボタン */
+.btn-back {
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-back:hover, .btn-back:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 削除ボタン */
+.btn-delete, .btn-release {
+  background-color: #FF3B30;
+  color: #fff;
+  border: none;
+}
+.btn-delete:hover, .btn-delete:focus,
+.btn-release:hover, .btn-release:focus {
+  background-color: #E30C00 !important;
+  color: #fff !important;
+  border: none !important;
+}
+/* CSV出力 */
+.btn-csv {
+  background-color: #6200EE;
+  color: #fff;
+  border: none;
+}
+.btn-csv:hover, .btn-csv:focus {
+  background-color: #4d00bb !important;
+  color: #fff !important;
+  border: none !important;
+}
+/* 編集中 */
+/* .btn-editing {
+} */
+/* ロック解除ボタン */
+/* .btn-unlock {
+} */
+/* 確認ボタン */
+.btn-confirm {
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-confirm:hover, .btn-confirm:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 印刷ボタン */
+.btn-print {
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+}
+.btn-print:hover, .btn-print:focus {
+    background-color: #4d00bb !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 完了ボタン */
+.btn-complete {
+  background-color: #6200EE;
+  color: #fff;
+  border: none;
+}
+.btn-complete:hover, .btn-complete:focus {
+  background-color: #4d00bb !important;
+  color: #fff !important;
+  border: none !important;
+}
+/* 操作系のボタン */
+.btn-operation {
+  background-color: #6200EE;
+  color: #fff;
+  border: none;
+}
+.btn-operation:hover, .btn-operation:focus {
+  background-color: #4d00bb !important;
+  color: #fff !important;
+  border: none !important;
+}
+/* 承認ボタン */
+.btn-approval {
+    background-color: #0000FF;
+    color: #fff;
+    border: none;
+}
+.btn-approval:hover, .btn-approval:focus {
+    background-color: #0000DD !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* 差戻ボタン */
+.btn-sendback {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+}
+.btn-sendback:hover, .btn-sendback:focus {
+    background-color: #DD0000	!important;
+    color: #fff !important;
+    border: none !important;
+}
+/* a,button両方で適用可能にする為bootstrapのdisabledクラスと組み合わせる */
+.btn-approval.disabled,
+.btn-sendback.disabled,
+.btn-detail.disabled,
+.btn-print.disabled,
+.btn-new.disabled,
+.btn-delete.disabled
+{
+    background-color: #707070 !important;
+    pointer-events: none !important;
+}
+
+/********************  ********************/
+/* 検索フォーム */
+.search-form {
+    margin-bottom: 20px;
+}
+/* 検索結果件数 */
+.search-count {
+    margin: 14px 0 0 0;
+}
+
+/* グリッド */
+/* .grid-form {
+
+} */
+
+/* 編集フォーム */
+/* .save-form {
+
+} */
+
+.required-mark {
+    color:red;
+}
+.attention-color {
+  color:red;
+}
+
+/* 入力フォーム */
+.inp {
+  position: relative;
+  margin: 5px 0px 5px 0px;
+  width: 100%;
+}
+.inp .label {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  font-size: 14px;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 97%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 97%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 3%;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.inp input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.inp input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-20px) scale(0.75);
+  font-size: 12px;
+}
+.inp input:focus {
+  background: none;
+  outline: none;
+}
+.inp input:focus + span {
+  color: #07f;
+  transform: translateY(-20px) scale(0.75);
+  font-size: 12px;
+}
+.inp input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+.input-margin{
+  margin-top: 15px;
+}
+
+.collapse-height{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ステップ */
+.subheader-step {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+
+/* ファイルアップロード */
+.file-upload-btn {
+  display: none !important;
+}
+.file_label {
+  background: #ddd;
+  padding: 3px 15px;
+  display: inline-block;
+  position: relative;
+  border-radius: 5%;
+  box-shadow: 0 2px 6px rgba(146, 156, 146, 0.8);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.file_label:hover{
+  background: #a9a9a9;
+  color: white;   
+}
+.file_label:active{
+  background: #696969;
+}
+
+/******************
+  Wijmo設定系 
+******************/
+/* ヘッダーフォント色、背景色 */
+.wj-header{
+  background-color: #43425D !important;
+  color: #FFFFFF !important;
+}
+/* ツールチップ */
+.wj-tooltip{
+  max-width: 100% !important;
+}
+/* スマホ版ヘッダー */
+.mobile-header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: relative;
+}
+.mobile-logo {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  width: 100%;
+}
+.mobile-headline {
+  background: -moz-linear-gradient(left, #2096D5, #003987);
+  background: -webkit-linear-gradient(left, #2096D5, #003987);
+  background: linear-gradient(to right, #2096D5, #003987);
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.mobile-svg {
+  color: #333333;
+  position: absolute;
+  top: 25px;
+  width: 79.31px;
+  height: 44.45px;
+}
+.mobile-footline {
+  background: -moz-linear-gradient(left, #2096D5, #003987);
+  background: -webkit-linear-gradient(left, #2096D5, #003987);
+  background: linear-gradient(to right, #2096D5, #003987);
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+}
+.header-text {
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 900;
+  top:30px;
+  left: 5px;
+}
