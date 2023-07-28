@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -10,8 +10,12 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-mix.js('resources/assets/js/app.js', 'public/js')
-   .js('resources/assets/js/common.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
+mix.webpackConfig({
+   devServer: {
+      hot: true,
+   },
+});
+mix.js("resources/assets/js/app.js", "public/js")
+   .js("resources/assets/js/common.js", "public/js")
+   .sass("resources/assets/sass/app.scss", "public/css")
    .version();

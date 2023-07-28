@@ -1,4 +1,6 @@
 <?php
+// use Illuminate\Routing\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +18,10 @@
 // });
 
 Route::get('/', 'DashboardController@index');
+Route::get('/new-sales-route', 'NewSalesController@getTotalSales');
+Route::get('/totalamount/{staffId}', 'NewSalesController@getTotalAmount');
 Route::post('/dashboard-sales-info/search', 'DashboardController@salesInfoSearchData');
+Route::post('/dashboard-sales-info/fetch', 'DashboardController@salesInfoFetchData');
 
 
 // 排他制御

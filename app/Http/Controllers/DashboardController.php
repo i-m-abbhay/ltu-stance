@@ -141,4 +141,21 @@ class DashboardController extends Controller
 
         return \Response::json($result);
     }
+    public function salesInfofetchData(Request $request)
+    {
+        
+        $department_id=$request->input('department_id');
+        $staff_id=$request->input('staff_id');
+        $customer_id=$request->input('department_id');
+        $sales_date=$request->input('department_id');
+        $total_profit= DB::select("select sum(profit_total) as sum from t_sales where matter_department_id =$department_id limit 100");
+        $total_sales= DB::select("select sum(sales_unit_price) as sum from t_sales where matter_department_id =$department_id limit 100");
+        $sales_data=[
+            'total_profit'=>$total_profit[0],
+            'total_sales'=>$total_sales[0]
+        ];
+        return ($sales_data);
+        // // return DB::table('t_sales')->where('matter_department_id','17');
+        // return $request->input('department_id');
+    }
 }
